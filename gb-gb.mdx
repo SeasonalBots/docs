@@ -1,4 +1,417 @@
 ---
-title: 'GB-gb'
+title: "HalloweenBot en-GB.json"
+description: "Translate HalloweenBot by editing this file and submitting a pull request."
 ---
 
+# 🎃 HalloweenBot Translation File
+
+Want to help translate HalloweenBot? You can do so by editing this file and submitting a **pull request**.
+
+Once your translation is reviewed and added to the bot, you’ll be credited as a **contributor** ❤️
+
+---
+
+## 🚀 How to Contribute
+
+1. Copy this file
+2. Rename it to your language (e.g. `it-IT.json`)
+3. Translate the values
+4. Submit a **pull request** on GitHub
+
+<Card title="Create a Pull Request" icon="github" href="https://github.com/SeasonalBots/docs">
+  Submit your translation and contribute to HalloweenBot
+</Card>
+
+---
+
+## 📁 File Location
+
+```text
+/locales/halloweenbot/<language-code>.json
+```
+
+Example:
+
+```text
+/locales/halloweenbot/it-IT.json
+```
+
+---
+
+## 🧩 Translation File
+
+```json
+{
+    "commands": {
+        "description": "We have {days} left till Halloween and {sleeps} left till Halloween!",
+        "days": {
+            "description": "We have {days} left till Halloween and {sleeps} left till Halloween!",
+            "days": [
+                "is {days} day",
+                "are {days} days"
+            ],
+            "sleeps": [
+                "{sleeps} sleep",
+                "{sleeps} sleeps"
+            ],
+            "title": [
+                "{days} day left",
+                "{days} days left"
+            ]
+        },
+        "help": {
+  "title": "{botname}'s Prefix Help:",
+  "description": "👋 Here’s a list of my prefix commands!",
+  "footer": "Select a category to view its commands | {version}",
+  "no_description": "No description provided",
+  "uncategorized": "Uncategorized",
+  "commands": "Commands:",
+  "view_commands": "View {category} commands",
+  "select_placeholder": "Select a category",
+  "none_found": "No prefix commands found."
+  
+},
+        "hours": {
+            "description": [
+                "There is {hours} hour left until Halloween!",
+                "There are {hours} hours left until Halloween!"
+            ],
+            "title": [
+                "{hours} hour left",
+                "{hours} hours left"
+            ]
+        },
+        "minutes": {
+            "description": [
+                "There is {minutes} minute left until Halloween!",
+                "There are {minutes} minutes left until Halloween!"
+            ],
+            "title": [
+                "{minutes} minute left",
+                "{minutes} minutes left"
+            ]
+        },
+        "months": {
+            "description": [
+                "There is {months} month left until Halloween!",
+                "There are {months} months left until Halloween!"
+            ],
+            "title": [
+                "{months} month left",
+                "{months} months left"
+            ]
+        },
+        "ping": {
+			"title": "🏓 Pong! Latency: **{latency} ms**"
+		},
+       "botinfo": {
+    "title": "{botname} Information:",
+    "fields": {
+        "name": "Name:",
+        "created": "Created:",
+        "developers": "Developers:",
+        "latency": "Latency:",
+        "discordjs": "Discord.JS:",
+        "nodejs": "Node.JS:",
+        "memory": "Memory Usage:",
+        "uptime": "Uptime:"
+    }
+        },
+        "checkperms": {
+    "title": "{botname} Permissions Check:",
+    "description": "This shows whether I have the required permissions in this server. If all are ticked, you're good to go!",
+    "permissions": {
+        "send": "Send Messages",
+        "embed": "Embed Links",
+        "view": "View Channel",
+        "manage_messages": "Manage Messages",
+        "manage_webhooks": "Manage Webhooks",
+        "manage_roles": "Manage Roles",
+        "external_emojis": "Use External Emojis",
+        "add_reactions": "Add Reactions",
+        "attach_files": "Attach Files"
+    }
+},
+
+        "links": {
+      "title": "{{username}} Links:",
+      "halloweenbot": "HalloweenBot:",
+      "halloweenbot2": "HalloweenBot2:",
+      "add": "Add HalloweenBot",
+      "website": "Website:",
+      "visit": "Visit Site",
+      "docs": "Docs:",
+      "read_docs": "Check the Docs",
+      "twitter": "Twitter:",
+      "follow": "Follow Us",
+      "status": "Status:",
+      "check_status": "Check Status",
+      "github": "GitHub:",
+      "github_view": "View GitHub",
+      "discord": "Discord:",
+      "join_discord": "Join Here"
+    },
+        "policy": {
+  "title": "**__Privacy Policy__**",
+  "description": "Hi, down below is all the information we store on our database of your data. Please ensure you take a good read of this.\n\n**__Discord Servers:__**\nWhen you add HalloweenBot to your servers, some information is stored in our database to enable full interaction with the bot. We collect the following:\n\n- Discord Server Name\n- Discord Server ID\n- Server Member Count\n- Total Servers Bot is In (Developer Use)\n- Shard ID (Developer Use)\n\n*Note: This data may still be kept even after the bot leaves a server for logging purposes.*\n\n**__Halloween Countdowns:__**\nFor countdown features, we store:\n\n- Discord Server ID\n- Channel ID for Countdown\n- Countdown Enabled/Disabled\n- Timestamp of Last Countdown Message\n- Countdown Message Content\n- Webhook Data (ID & Secret)\n\n*We understand the sensitivity of webhook data. HalloweenBot securely encrypts and protects all webhooks. These webhooks are write-only and cannot be deleted, reused, or accessed maliciously. Only our Development and Leadership team can audit them.*\n\n**__Halloween Events:__**\n\n- Discord Server ID\n- Channel ID\n- Created At\n- If Events Are Enabled or Disabled\n- Reward Role\n- Last Updated Timestamp\n- Event Running (true/false)\n- Last Event Timestamp\n- Next Event Timestamp\n\n**__User Profile:__**\n\n- User ID\n- Staff Member (true/false)\n- Premium Status (true/false)\n- Language Preference\n- Timezone\n- If User is Banned\n\n**__Contact Information:__**\nIf you have any concerns, feel free to join our [Discord Server](https://discord.gg/4bxtftVuzn) or email us at **legal@halloweenbot.com**.\n\nOur team is always here to help you and ensure you have the best possible experience with HalloweenBot. Your privacy and data safety is our top priority.\n\n*This privacy policy is effective as of: Monday, 6th June 2022.*"
+},
+"uptime": {
+      "title": "{{username}} Uptime:",
+      "label": "Uptime:"
+    },
+
+        "reportbug": {
+    "title": "New Bug Report",
+    "fields": {
+        "reported_by": "Reported by",
+        "server": "Server",
+        "channel": "Channel",
+        "image_url": "Image URL"
+    },
+    "submitted": "🧡 Thank you for sending this report. Our Developers have now received it. Please allow some time for a response & join the Discord to keep updated.\n\n[Join Discord](https://discord.gg/4bxtftVuzn)",
+    "error": "❌ I cannot find the bug report channel. Please contact a Developer.",
+    "error_usage": "👻 Please provide a description of the bug. Usage: `@HalloweenBot reportbug <platform> <description> [image_url]`",
+    "mention": "New report has been submitted."
+},
+"config": {
+    "title": "Configuration for {guildName}",
+    "fields": {
+      "guildId": "Guild ID",
+      "guildName": "Name",
+      "locale": "Locale",
+      "timezone": "Timezone",
+      "premium": "Premium Status",
+      "beta": "Beta Status",
+      "blacklisted": "Blacklisted",
+      "registered": "Dashboard Registered"
+    },
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "yes": "Yes",
+    "no": "No",
+    "unknown": "Unknown",
+    "lastUpdated": "Last Updated: {time}"
+  },
+  "register": {
+    "noPermission": "You do not have permission to register this server for the dashboard.",
+    "alreadyRegistered": "This server is already registered for the dashboard. Manage your settings here: [Dashboard Link]({dashboardLink})",
+    "successTitle": "Server Registered",
+    "successDescription": "Your server **{guildName}** has been successfully registered for the dashboard.\n\nYou can manage your server settings here: [Dashboard Link]({dashboardLink})",
+    "errorGeneric": "An error occurred while registering your server. Please try again later."
+  },
+  "setlang": {
+    "noPermission": "You do not have permission to change the server language.",
+    "serverTitle": "Server Language Updated",
+    "userTitle": "User Language Updated",
+    "original": "Original Language",
+    "updated": "New Language",
+    "errorServer": "An error occurred while updating the server language. Please try again later.",
+    "errorUser": "An error occurred while updating your language. Please try again later.",
+    "invalidTarget": "Invalid target option selected. Please choose either \"server\" or \"user\"."
+  },
+  "settime": {
+    "invalid": "Timezone not found. Please provide a valid timezone.",
+    "noPermission": "You do not have permission to change the server timezone.",
+    "serverTitle": "Server Timezone Updated",
+    "userTitle": "User Timezone Updated",
+    "original": "Original Timezone:",
+    "updated": "New Timezone:",
+    "errorServer": "An error occurred while updating the server timezone. Please try again later.",
+    "errorUser": "An error occurred while updating your timezone. Please try again later.",
+    "invalidTarget": "Invalid target option selected. Please choose either \"server\" or \"user\"."
+  },
+   "setup": {
+    "success": "The Daily Countdown channel has been set to {channel} at {time}.",
+    "enabled": "Countdown has been set to: **Enabled**",
+    "disabled": "Countdown has been set to: **Disabled**",
+    "not_setup": "No Daily Countdown setup found. Please run the `/setup` command first.",
+    "view_missing": "I couldn't find this server in my database. Please run the `/setup` command first.",
+    "view_title": "Daily Countdown Configuration",
+    "view_desc": "Current Daily Countdown configuration:",
+     "fields": {
+                "channel": "Daily Countdown Channel",
+                "enabled": "Enabled",
+                "time": "Time",
+                "none": "None",
+                "true": "True",
+                "false": "False",
+                "not_set": "Not set",
+                "timezone": "Timezone"
+            }
+  },
+  "sync": {
+  "not_in_guild": "This command can only be used in a server.",
+  "no_permission": "You do not have permission to sync this server with the dashboard.",
+  "no_data": "No daily countdown data found for this server. Please run `/setup create` first.",
+  "success_title": "Server Synced",
+  "success_description": "Your server settings have been successfully synced with the dashboard.\n\nYou can manage your plugins here: [Dashboard Link](https://halloweenbot.com/manage/{guildID}/settings)",
+  "error": "An error occurred while syncing your server settings. Please try again later."
+},
+
+        "seconds": {
+            "description": [
+                "There is {seconds} second left until Halloween!",
+                "There are {seconds} seconds left until Halloween!"
+            ],
+            "title": [
+                "{seconds} second left",
+                "{seconds} seconds left"
+            ]
+        },
+        "sleeps": {
+            "days": [
+                "**{days} day**",
+                "**{days} days**"
+            ],
+            "description": "There {sleeps} or {days} left until Halloween!",
+            "sleeps": [
+                "is **{sleeps} sleep**",
+                "are **{sleeps} sleeps**"
+            ],
+            "title": [
+                "{sleeps} sleep left",
+                "{sleeps} sleeps left"
+            ]
+        },
+        "suggest": {
+            "description": "Thank you for your suggestion.",
+            "title": "✅ Submitted"
+        },
+        "total": {
+            "days": [
+                "{days} day",
+                "{days} days"
+            ],
+            "description": [
+                "There is {days}, {hours}, {minutes}, and {seconds} left until Halloween!",
+                "There are {days}, {hours}, {minutes}, and {seconds} left until Halloween!"
+            ],
+            "hours": [
+                "{hours} hour",
+                "{hours} hours"
+            ],
+            "minutes": [
+                "{minutes} minute",
+                "{minutes} minutes"
+            ],
+            "seconds": [
+                "{seconds} second",
+                "{seconds} seconds"
+            ],
+            "title": "{days}, {hours}, {minutes}, {seconds} left"
+        },
+        "weeks": {
+            "description": [
+                "There is **{weeks}** week left until Halloween!",
+                "There are **{weeks}** weeks left until Halloween!"
+            ],
+            "title": [
+                "{weeks} week left",
+                "{weeks} weeks left"
+            ]
+        },
+		"seteventconfig": {
+            "set": {
+                "success": "Event configuration has been set. Event channel: {channel}, Reward role: {role}.",
+                "no_manage_roles": "I need the Manage Roles permission to set the reward role.",
+                "no_role": "None"
+            },
+            "config": {
+                "success": "Event has been {status}.",
+                "no_config": "No event configuration found. Please set the event channel first."
+            },
+            "view": {
+                "title": "Event Configuration",
+                "channel": "Event Channel",
+                "role": "Reward Role",
+                "enabled": "Enabled",
+                "no_config": "No configuration found for this server. Please set the event channel first."
+            }
+        }
+    },
+    "common": {
+        "enable": "enabled",
+        "disable": "disabled",
+        "true": "True",
+        "false": "False",
+        "none": "None",
+        "not_set": "Not Set"
+    },
+	"settime": {
+            "server_updated": "Server Timezone Updated",
+            "user_updated": "User Timezone Updated",
+            "fields": {
+                "original_timezone": "Original Timezone:",
+                "new_timezone": "New Timezone:"
+            },
+            "errors": {
+                "invalid_timezone": "Timezone not found. Please provide a valid timezone.",
+                "no_permission": "You do not have permission to change the server timezone.",
+                "no_self_change": "You can only change your own timezone settings.",
+                "invalid_target": "Invalid target option selected. Please choose either 'server' or 'user'."
+            }
+        },
+        "setuphelp": {
+            "title": "Setup Guide",
+            "greeting": "Hi, Thanks for running this command. Below is a basic guide to help you set up your countdown.",
+            "instructions_1": "To get started, run the following command:",
+            "instructions_create": "You will see a command like this: [Create](https://cordx.lol/users/324646179134636043/F3ZoJ5gG.png). **Please ensure you select the correct channel.** Once you have done this, you can set a time for when you want this to display.",
+            "instructions_2": "After that, you can enable or disable your countdown by running:",
+            "instructions_3": "If you're happy with your settings and want to review them, run the command:",
+            "instructions_4": "Finally, to set your timezone, run the following command:",
+            "instructions_settime": "You will be shown this: [Timezone](https://cordx.lol/users/324646179134636043/WMnjV9Kq.png). From there, you can select your timezone.",
+            "final_note": "Please note that the countdown will not display until the following day after setup. If it still doesn't work, please report the issue by running:",
+            "thanks": "We hope this guide helps, and thank you for using HalloweenBot! 🥰"
+
+        },
+    "countdown": {
+        "halloween_day": "👻 Trick or Treat 👻",
+        "halloween_eve": "👻 What are you dressing up as tomorrow? 👻",
+        "happy_halloween": "👻 Trick or Treat 👻",
+        "server_timezone": "Server timezone: {timezone}",
+        "user_timezone": "User timezone: {timezone}",
+        "disable": {
+            "description": "Thanks for using this bot and enjoy your Halloween! 🎃",
+            "title": "👻 Happy Halloween"
+        }
+    },
+    "disabled": "disabled"
+}
+```
+
+---
+
+## ⚠️ Rules
+
+- ❌ Do NOT change keys
+- ❌ Do NOT remove `{variables}` (e.g. `{days}`, `{latency}`)
+- ❌ Do NOT break JSON formatting
+- ✅ Only translate the text values
+- ✅ Keep emojis 🎃👻
+- ✅ Keep formatting like `**bold**`
+
+---
+
+## 🏆 Contributor Recognition
+
+When your translation is merged:
+
+- 🌟 You’ll be listed as a contributor
+- 🎖 You may receive a Discord role
+- 🚀 Your work will be used by servers worldwide
+
+---
+
+## 📢 Need Help?
+
+If you're unsure about anything, feel free to ask in our Discord.
+
+<Card title="Join Discord" icon="discord" href="https://halloweenbot.com/redirects/discord">
+  Get help with translations or ask questions
+</Card>
+
+---
+
+<Tip>
+  You don’t need to translate everything — even small contributions help!
+</Tip>
