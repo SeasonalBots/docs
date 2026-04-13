@@ -1,0 +1,99 @@
+---
+title: "Event Configuration"
+description: "Set up and manage HalloweenBot event rewards, notifications, and leaderboards."
+---
+
+## 🕸️ Event Configuration: Set Up and Manage Server Rewards
+
+HalloweenBot lets you run fun, competitive Trick-or-Treat style events where users earn points by participating. You can configure event channels, rewards, and notifications using the `/seteventconfig` command.
+
+---
+
+## ⚙️ Setting Up Event Configuration
+
+To configure your event settings:
+
+- **Set Channel & Reward Role**  
+  Use:
+  ```bash
+  /seteventconfig config set
+  ```
+
+During setup, you will:
+- Choose the channel for event messages  
+- Select the reward role for top users  
+
+This role is automatically awarded based on user points.
+
+---
+
+## 🔔 Enable or Disable Event Messages
+
+Control whether event messages are sent:
+
+- **Toggle Event Messages**  
+  Use:
+  ```bash
+  /seteventconfig config
+  ```
+
+When enabled:
+- Messages are sent every **10–60 minutes**
+- Users must react quickly with 🎃 to earn points
+
+---
+
+## 🔍 View Event Configuration
+
+Check your current setup anytime:
+
+- **View Configuration**  
+  Use:
+  ```bash
+  /seteventconfig view
+  ```
+
+This shows:
+- Selected channel  
+- Reward role  
+- Whether events are enabled  
+
+---
+
+## 🏆 Leaderboard: Track Points
+
+See who’s leading the event:
+
+- **Server Leaderboard**
+  ```bash
+  /leaderboard scope server
+  ```
+
+- **Global Leaderboard**
+  ```bash
+  /leaderboard scope global
+  ```
+
+---
+
+## 🔐 Permissions Required
+
+HalloweenBot requires:
+
+- **Manage Roles**
+
+This allows the bot to:
+- Assign reward roles automatically  
+- Update roles based on leaderboard standings  
+
+---
+
+## 🎉 Pro Tip
+
+Encourage fast responses and competition by announcing events or pairing them with rewards like giveaways or special perks.
+
+---
+
+<Tip>
+Make sure the bot’s role is higher than the reward role in your server settings, otherwise it won’t be able to assign it.
+</Tip>

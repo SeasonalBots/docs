@@ -1,94 +1,73 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Daily Countdown Webhook Setup"
+description: "Set up HalloweenBot's daily countdown webhook to send automatic updates to your Discord server."
 ---
 
-<Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
-</Info>
+## 🎃 Setting Up the Daily Countdown Webhook
 
-Follow these steps to install and run Mintlify on your operating system.
+HalloweenBot makes it easy to keep your community engaged with a daily countdown to Halloween. By setting up a webhook, you can have HalloweenBot automatically send daily updates to your chosen channel at your preferred time.
 
-<Steps>
-<Step title="Install the Mintlify CLI">
+---
 
-```bash
-npm i -g mint
-```
-</Step>
+## ⚙️ Enable or Disable the Webhook
 
-<Step title="Preview locally">
+The first step is to enable or disable the webhook for your server. This determines whether daily countdown updates will be sent.
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+- **Enable Webhook**  
+  Use:
+  ```bash
+  /setup config enable
+  ```
+  to activate the daily countdown webhook.
 
-```bash
-mint dev
-```
+- **Disable Webhook**  
+  Use:
+  ```bash
+  /setup config disable
+  ```
+  to stop the countdown updates.
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+---
 
-</Step>
-</Steps>
+## 📅 Set Up Channel and Time
 
-## Custom ports
+Once enabled, you’ll need to choose where and when updates are sent.
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
+- **Create Webhook Configuration**  
+  Use:
+  ```bash
+  /setup create
+  ```
 
-```bash
-mint dev --port 3333
-```
+HalloweenBot will guide you through:
+- Selecting the channel for updates
+- Choosing the daily send time (e.g. 9:00 AM)
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+---
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+## 🔍 View Current Configuration
 
-## Mintlify versions
+You can check your setup at any time.
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+- **View Configuration**  
+  Use:
+  ```bash
+  /setup view
+  ```
 
-```bash
-npm mint update
-```
+This will show:
+- Selected channel  
+- Scheduled time  
+- Webhook status (enabled/disabled)
 
-## Validating links
+---
 
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
+## 🎉 You're All Set!
 
-```bash
-mint broken-links
-```
+Your server will now receive daily countdown updates leading up to Halloween 🎃
 
-## Deployment
+---
 
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+<Tip>
+Make sure HalloweenBot has permission to send messages in your selected channel, otherwise the webhook won’t work.
+</Tip>
