@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "palm",
   "name": "SeasonalBots Docs",
   "colors": {
     "primary": "#16A34A",
@@ -67,7 +67,8 @@
   },
   "logo": {
     "light": "https://image.seasonalbots.com/u/FFNkAF.png",
-    "dark": "https://image.seasonalbots.com/u/FFNkAF.png"
+    "dark": "https://image.seasonalbots.com/u/FFNkAF.png",
+    "href": "https://seasonalbots.com/"
   },
   "navbar": {
     "links": [
@@ -105,5 +106,8 @@
   },
   "seo": {
     "indexing": "navigable"
+  },
+  "background": {
+    "decoration": "windows"
   }
 }
