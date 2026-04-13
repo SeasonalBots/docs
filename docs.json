@@ -66,8 +66,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://image.seasonalbots.com/u/FFNkAF.png",
+    "dark": "https://image.seasonalbots.com/u/FFNkAF.png"
   },
   "navbar": {
     "links": [
