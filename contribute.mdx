@@ -1,0 +1,145 @@
+---
+title: "Help Translate HalloweenBot & ChristmasBot"
+description: "Contribute translations by editing our language files and submitting a pull request."
+---
+
+# 🌍 Help Translate HalloweenBot & ChristmasBot
+
+Want to help translate **HalloweenBot** or **ChristmasBot**?  
+You can edit our language files and submit a pull request to contribute.
+
+---
+
+## 📁 Where Are Translations Stored?
+
+Translations are stored in JSON files like:
+
+```
+/locales/en-GB.json
+```
+
+This file contains all bot messages, commands, and responses.
+
+---
+
+## ✏️ How to Edit Translations
+
+### Step 1: Open the file
+
+Find:
+```
+en-GB.json
+```
+
+---
+
+### Step 2: Understand the Structure
+
+Example:
+
+```json
+{
+  "commands": {
+    "ping": {
+      "title": "🏓 Pong! Latency: **{latency} ms**"
+    }
+  }
+}
+```
+
+---
+
+### Step 3: Translate ONLY the values
+
+✅ Correct:
+```json
+"title": "🏓 Pong! Latenza: **{latency} ms**"
+```
+
+❌ Wrong (DO NOT change keys):
+```json
+"titulo": "🏓 Pong! Latenza: **{latency} ms**"
+```
+
+---
+
+## ⚠️ Important Rules
+
+- ❌ Do NOT change keys (`commands.ping.title`)
+- ❌ Do NOT remove `{variables}` like `{days}`, `{latency}`
+- ❌ Do NOT break JSON format
+- ✅ Keep emojis (🎃 👻 🎄)
+- ✅ Keep formatting like `**bold**`
+
+---
+
+## 🔁 Handling Plurals
+
+Some entries use arrays:
+
+```json
+"days": [
+  "is {days} day",
+  "are {days} days"
+]
+```
+
+👉 Translate BOTH:
+
+```json
+"days": [
+  "è {days} giorno",
+  "sono {days} giorni"
+]
+```
+
+---
+
+## ➕ Adding a New Language
+
+1. Copy:
+```
+en-GB.json
+```
+
+2. Rename:
+```
+it-IT.json
+```
+
+3. Translate all values
+
+---
+
+## 🚀 Submit Your Changes
+
+1. Click **Edit (✏️)** on GitHub  
+2. Make your changes  
+3. Click **Commit changes**  
+4. Create a **Pull Request**
+
+We’ll review it and merge it!
+
+---
+
+## 🧪 Testing Your Translation
+
+Once merged, test in Discord:
+
+```bash
+/setlocale it-IT
+```
+
+---
+
+## 🏆 Rewards
+
+- 🌟 Credit in docs  
+- 🎖 Discord role  
+- 🚀 Early access  
+
+---
+
+<Tip>
+Start small — even fixing one sentence helps!
+</Tip>

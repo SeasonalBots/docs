@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SeasonalBots Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -18,17 +18,47 @@
         }
       ]
     },
-    "tabs": [
+    "versions": [
       {
-        "tab": "Guides",
-        "pages": [
-          "index",
-          "quickstart",
+        "version": "V1.0.0",
+        "tabs": [
           {
-            "group": "HalloweenBot",
+            "tab": "Guides",
             "pages": [
-              "development",
-              "untitled-page"
+              "index",
+              "quickstart",
+              {
+                "group": "HalloweenBot",
+                "pages": [
+                  "development",
+                  "language",
+                  "event"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Translations",
+            "pages": [
+              "contribute"
+            ]
+          },
+          {
+            "tab": "Locales",
+            "pages": [
+              {
+                "group": "HalloweenBot",
+                "pages": [
+                  "template",
+                  "gb-gb"
+                ]
+              },
+              {
+                "group": "ChristmasBot",
+                "pages": [
+                  "christmas"
+                ]
+              }
             ]
           }
         ]
@@ -43,7 +73,11 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:help@seasonalbots.com"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.com/invite/4bxtftVuzn"
       }
     ],
     "primary": {
@@ -66,9 +100,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/SeasonalBots"
     }
+  },
+  "seo": {
+    "indexing": "navigable"
   }
 }

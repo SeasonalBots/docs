@@ -1,0 +1,70 @@
+---
+title: "HalloweenBot Translation Template"
+description: "Use this template to create or edit translations for HalloweenBot."
+---
+
+# 🎃 HalloweenBot Translation Template
+
+Copy this template when creating a new language file.
+
+---
+
+## 📁 File Location
+
+```
+/locales/halloweenbot/<language-code>.json
+```
+
+Example:
+```
+/locales/halloweenbot/it-IT.json
+```
+
+---
+
+## 🧩 Template
+
+```json
+{
+  "commands": {
+    "ping": {
+      "title": "🏓 Pong! Latency: **{latency} ms**"
+    },
+    "days": {
+      "description": "We have {days} left till Halloween and {sleeps} left till Halloween!",
+      "days": [
+        "is {days} day",
+        "are {days} days"
+      ],
+      "sleeps": [
+        "{sleeps} sleep",
+        "{sleeps} sleeps"
+      ],
+      "title": [
+        "{days} day left",
+        "{days} days left"
+      ]
+    }
+  },
+  "countdown": {
+    "halloween_day": "👻 Trick or Treat 👻",
+    "halloween_eve": "👻 What are you dressing up as tomorrow? 👻"
+  }
+}
+```
+
+---
+
+## ⚠️ Rules
+
+- ❌ Do NOT change keys  
+- ❌ Do NOT remove `{variables}`  
+- ✅ Only translate the text  
+- ✅ Keep emojis 🎃👻  
+- ✅ Keep formatting like `**bold**`
+
+---
+
+<Tip>
+Start by translating only a few sections — you don’t need to complete everything!
+</Tip>
